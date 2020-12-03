@@ -1,24 +1,240 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Km9-r0-ESk">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Gallery-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TurchinApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pocket" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ov-r2-Zhj">
+                                <rect key="frame" x="181" y="20" width="125" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="T5B-Rl-9JU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LkM-Ej-VvH">
+                                <rect key="frame" x="0.0" y="77" width="414" height="610"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turchin_extremehorizontal_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="g7u-25-IcQ">
+                                <rect key="frame" x="108" y="34" width="198" height="35"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="g7u-25-IcQ" firstAttribute="centerX" secondItem="LkM-Ej-VvH" secondAttribute="centerX" id="27B-c1-MSR"/>
+                            <constraint firstItem="LkM-Ej-VvH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9sF-fs-LiA"/>
+                            <constraint firstItem="6Ov-r2-Zhj" firstAttribute="trailing" secondItem="g7u-25-IcQ" secondAttribute="trailing" id="D64-As-5Xo"/>
+                            <constraint firstItem="6Ov-r2-Zhj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="181" id="Doy-UI-L8l"/>
+                            <constraint firstItem="g7u-25-IcQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EAK-6P-rwM"/>
+                            <constraint firstItem="LkM-Ej-VvH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="FCM-68-9q6"/>
+                            <constraint firstItem="6Ov-r2-Zhj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="HcK-ut-WSx"/>
+                            <constraint firstItem="LkM-Ej-VvH" firstAttribute="top" secondItem="6Ov-r2-Zhj" secondAttribute="bottom" constant="40" id="IQa-qp-N3j"/>
+                            <constraint firstItem="g7u-25-IcQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="JAr-a0-LTm"/>
+                            <constraint firstItem="LkM-Ej-VvH" firstAttribute="top" secondItem="g7u-25-IcQ" secondAttribute="bottom" constant="8" id="mnA-pq-Ow7"/>
+                            <constraint firstItem="g7u-25-IcQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="vYO-mk-zV5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Gallery" image="Gallery" id="SFc-31-Sfi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1053.6231884057972" y="-201.35869565217394"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="VYK-tM-OQf">
+            <objects>
+                <viewController id="uii-3E-sUm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZFq-5g-V9o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turchin_extremehorizontal_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="uEe-WN-sUn">
+                                <rect key="frame" x="108" y="34" width="198" height="35"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pocket" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19S-FO-B6J">
+                                <rect key="frame" x="181" y="20" width="125" height="17"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uEe-WN-sUn" firstAttribute="centerX" secondItem="ZFq-5g-V9o" secondAttribute="centerX" id="61E-sN-wKa"/>
+                            <constraint firstItem="uEe-WN-sUn" firstAttribute="leading" secondItem="JNN-Mw-gqs" secondAttribute="leading" constant="108" id="Bag-vE-LNJ"/>
+                            <constraint firstItem="JNN-Mw-gqs" firstAttribute="bottom" secondItem="uEe-WN-sUn" secondAttribute="bottom" constant="618" id="H1n-Sm-RnC"/>
+                            <constraint firstItem="19S-FO-B6J" firstAttribute="leading" secondItem="JNN-Mw-gqs" secondAttribute="leading" constant="181" id="INn-X3-rUg"/>
+                            <constraint firstItem="uEe-WN-sUn" firstAttribute="trailing" secondItem="19S-FO-B6J" secondAttribute="trailing" id="UY8-5U-73N"/>
+                            <constraint firstItem="19S-FO-B6J" firstAttribute="top" secondItem="JNN-Mw-gqs" secondAttribute="top" constant="20" id="Xls-LJ-ZyM"/>
+                            <constraint firstItem="uEe-WN-sUn" firstAttribute="top" secondItem="JNN-Mw-gqs" secondAttribute="top" constant="34" id="dkw-nW-oL7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JNN-Mw-gqs"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="Favorites" id="nj3-NE-2YY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K0X-i5-ziB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1775" y="151"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="lPX-UY-oc0">
+            <objects>
+                <viewController id="95v-E3-0NB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4PZ-Hb-0KR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turchin_extremehorizontal_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="bGg-t6-AWW">
+                                <rect key="frame" x="108" y="34" width="198" height="35"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pocket" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ix2-pr-ypW">
+                                <rect key="frame" x="181" y="20" width="125" height="17"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bGg-t6-AWW" firstAttribute="top" secondItem="Pce-vP-bFV" secondAttribute="top" constant="34" id="3Ni-RV-5JJ"/>
+                            <constraint firstItem="ix2-pr-ypW" firstAttribute="top" secondItem="Pce-vP-bFV" secondAttribute="top" constant="20" id="A1A-6e-g3Z"/>
+                            <constraint firstItem="ix2-pr-ypW" firstAttribute="leading" secondItem="Pce-vP-bFV" secondAttribute="leading" constant="181" id="Kdg-Xr-Jaf"/>
+                            <constraint firstItem="Pce-vP-bFV" firstAttribute="bottom" secondItem="bGg-t6-AWW" secondAttribute="bottom" constant="618" id="WXF-HY-Twr"/>
+                            <constraint firstItem="bGg-t6-AWW" firstAttribute="centerX" secondItem="4PZ-Hb-0KR" secondAttribute="centerX" id="dr7-08-bZK"/>
+                            <constraint firstItem="bGg-t6-AWW" firstAttribute="top" secondItem="ix2-pr-ypW" secondAttribute="bottom" constant="-3" id="hDA-Xq-0WM"/>
+                            <constraint firstItem="bGg-t6-AWW" firstAttribute="trailing" secondItem="ix2-pr-ypW" secondAttribute="trailing" id="owp-Dk-Dhq"/>
+                            <constraint firstItem="bGg-t6-AWW" firstAttribute="leading" secondItem="Pce-vP-bFV" secondAttribute="leading" constant="108" id="pgD-QJ-LiN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Pce-vP-bFV"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="Search" id="Yds-Se-3xM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xhg-SB-eVV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1171" y="886"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="uS3-cn-pVW">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Km9-r0-ESk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BqE-wY-ZN0">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Abk-dk-ij1"/>
+                        <segue destination="uii-3E-sUm" kind="relationship" relationship="viewControllers" id="AtM-1l-gkL"/>
+                        <segue destination="95v-E3-0NB" kind="relationship" relationship="viewControllers" id="FlM-PY-UIc"/>
+                        <segue destination="hX5-s3-UrO" kind="relationship" relationship="viewControllers" id="Xtf-OZ-Xe5"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cUe-WE-EGb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="95.380434782608702"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="0do-3H-MZ8">
+            <objects>
+                <viewController id="hX5-s3-UrO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sva-eD-Wph">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turchin_extremehorizontal_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="nns-Yz-Izp">
+                                <rect key="frame" x="108" y="34" width="198" height="35"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pocket" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9X-Tb-Ixq">
+                                <rect key="frame" x="181" y="20" width="125" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="Cos-O9-pOD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CqE-2O-Nzb">
+                                <rect key="frame" x="130" y="70" width="162" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="H4T-lI-Wyg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="41"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="f6P-B3-9EJ">
+                                <rect key="frame" x="20" y="137" width="374" height="198"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="198" id="Kpu-d2-ssf"/>
+                                </constraints>
+                                <string key="text">The Turchin Center features two wings and six dynamic galleries with changing exhibitions of contemporary art works by nation and international artists, as well as the finest local artists of our region. Outdoor sculptures are located across the Appalachian State University campus.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dax-RD-u5O">
+                                <rect key="frame" x="20" y="560" width="374" height="114"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="uWH-kk-A4d"/>
+                                </constraints>
+                                <string key="text">Copyright 2020, ZACK NOBLE 
+Student, Appalachian State University 
+CS 5240 Moble Device Programming Project</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="d9X-Tb-Ixq" firstAttribute="trailing" secondItem="nns-Yz-Izp" secondAttribute="trailing" id="0om-JR-8tV"/>
+                            <constraint firstItem="CqE-2O-Nzb" firstAttribute="leading" secondItem="djl-Kb-KRS" secondAttribute="leading" constant="130" id="2i8-hj-Uqi"/>
+                            <constraint firstItem="CqE-2O-Nzb" firstAttribute="top" secondItem="nns-Yz-Izp" secondAttribute="bottom" constant="1" id="4Br-TW-oCO"/>
+                            <constraint firstItem="d9X-Tb-Ixq" firstAttribute="top" secondItem="djl-Kb-KRS" secondAttribute="top" constant="20" id="6A7-fn-QLZ"/>
+                            <constraint firstItem="CqE-2O-Nzb" firstAttribute="top" secondItem="d9X-Tb-Ixq" secondAttribute="bottom" constant="33" id="Eq6-JI-oEA"/>
+                            <constraint firstItem="djl-Kb-KRS" firstAttribute="trailing" secondItem="CqE-2O-Nzb" secondAttribute="trailing" constant="122" id="Ipg-VF-qgd"/>
+                            <constraint firstItem="f6P-B3-9EJ" firstAttribute="leading" secondItem="Dax-RD-u5O" secondAttribute="leading" id="MmL-Cl-D5v"/>
+                            <constraint firstItem="nns-Yz-Izp" firstAttribute="leading" secondItem="djl-Kb-KRS" secondAttribute="leading" constant="108" id="OcG-t5-Dbe"/>
+                            <constraint firstItem="f6P-B3-9EJ" firstAttribute="leading" secondItem="Sva-eD-Wph" secondAttribute="leadingMargin" id="V14-Xe-9Fb"/>
+                            <constraint firstItem="nns-Yz-Izp" firstAttribute="centerX" secondItem="f6P-B3-9EJ" secondAttribute="centerX" id="XNX-xr-bMl"/>
+                            <constraint firstItem="d9X-Tb-Ixq" firstAttribute="leading" secondItem="djl-Kb-KRS" secondAttribute="leading" constant="181" id="fSx-YY-T3s"/>
+                            <constraint firstItem="nns-Yz-Izp" firstAttribute="top" secondItem="djl-Kb-KRS" secondAttribute="top" constant="34" id="gWz-v9-gP4"/>
+                            <constraint firstItem="f6P-B3-9EJ" firstAttribute="trailing" secondItem="Sva-eD-Wph" secondAttribute="trailingMargin" id="pR6-XR-krZ"/>
+                            <constraint firstItem="f6P-B3-9EJ" firstAttribute="trailing" secondItem="Dax-RD-u5O" secondAttribute="trailing" id="tIP-wk-Upm"/>
+                            <constraint firstItem="f6P-B3-9EJ" firstAttribute="top" secondItem="nns-Yz-Izp" secondAttribute="bottom" constant="68" id="tSj-QQ-FbA"/>
+                            <constraint firstItem="djl-Kb-KRS" firstAttribute="bottom" secondItem="Dax-RD-u5O" secondAttribute="bottom" constant="13" id="yUf-NO-jBi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="djl-Kb-KRS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="About" id="m8r-zC-ICN"/>
+                    <size key="freeformSize" width="414" height="736"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XRd-c6-2ig" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2430.434782608696" y="912.22826086956525"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="About" width="10" height="10"/>
+        <image name="Favorites" width="10" height="10"/>
+        <image name="Gallery" width="10" height="10"/>
+        <image name="Search" width="10" height="10"/>
+        <image name="turchin_extremehorizontal_logo.png" width="1080" height="165"/>
+    </resources>
 </document>

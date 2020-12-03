@@ -13,6 +13,7 @@
 		B8914D72257954EF00852984 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8914D70257954EF00852984 /* Main.storyboard */; };
 		B8914D74257954F100852984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8914D73257954F100852984 /* Assets.xcassets */; };
 		B8914D77257954F100852984 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8914D75257954F100852984 /* LaunchScreen.storyboard */; };
+		B8914D7F25795BEF00852984 /* turchin_extremehorizontal_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B8914D7E25795BEF00852984 /* turchin_extremehorizontal_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B8914D73257954F100852984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8914D76257954F100852984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8914D78257954F100852984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8914D7E25795BEF00852984 /* turchin_extremehorizontal_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turchin_extremehorizontal_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				B8914D73257954F100852984 /* Assets.xcassets */,
 				B8914D75257954F100852984 /* LaunchScreen.storyboard */,
 				B8914D78257954F100852984 /* Info.plist */,
+				B8914D7E25795BEF00852984 /* turchin_extremehorizontal_logo.png */,
 			);
 			path = TurchinApp;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8914D77257954F100852984 /* LaunchScreen.storyboard in Resources */,
+				B8914D7F25795BEF00852984 /* turchin_extremehorizontal_logo.png in Resources */,
 				B8914D74257954F100852984 /* Assets.xcassets in Resources */,
 				B8914D72257954EF00852984 /* Main.storyboard in Resources */,
 			);
